@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hxP-Do-dlf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tour-->
+        <scene sceneID="hNA-Zs-SNm">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="hxP-Do-dlf" customClass="FDTour" customModule="FoodDog" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CXK-zQ-i02" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="161"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="i9N-i0-G6n">
+            <objects>
+                <viewController storyboardIdentifier="first" id="Lyb-LU-iyW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UnE-OU-bA9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uHq-Ic-Z3i">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
+                                <color key="backgroundColor" name="SecondColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="tDG-Zb-Bvw">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="120"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="140"/>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVb-5U-2ao">
+                                <rect key="frame" x="20" y="240" width="112" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" name="TextPrimaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyW-wG-eqm">
+                                <rect key="frame" x="20" y="296.5" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="TextPrimaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HZ-Em-Cgw">
+                                <rect key="frame" x="20" y="327.5" width="374" height="215"/>
+                                <mutableString key="text">Lorem ipsum dolor sit amet consectetur adipiscing elit diam egestas mauris, ut mattis pretium habitasse senectus aenean lobortis nulla sem, sagittis porttitor morbi faucibus ridiculus nec dui quis vulputate. Vehicula integer metus aliquet nec sociosqu sodales semper et condimentum nullam, scelerisque lacus rutrum rhoncus taciti sagittis ad aenean vivamus elementum, cras congue facilisi orci lobortis venenatis iaculis dapibus nisl. Montes commodo libero sodales natoque eleifend justo, ultrices fermentum pellentesque laoreet vivamus faucibus convallis, conubia turpis leo congue nam.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="TextThirtColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gAT-g0-lgH"/>
+                        <color key="backgroundColor" name="PrimaryColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5HZ-Em-Cgw" secondAttribute="trailing" constant="20" id="8yY-9n-Hwz"/>
+                            <constraint firstItem="oyW-wG-eqm" firstAttribute="leading" secondItem="MVb-5U-2ao" secondAttribute="leading" id="Dmr-ep-b6A"/>
+                            <constraint firstItem="uHq-Ic-Z3i" firstAttribute="trailing" secondItem="gAT-g0-lgH" secondAttribute="trailing" id="TLt-hW-ram"/>
+                            <constraint firstItem="oyW-wG-eqm" firstAttribute="top" secondItem="MVb-5U-2ao" secondAttribute="bottom" constant="30" id="Ttu-J9-lEF">
+                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="uHq-Ic-Z3i" firstAttribute="top" secondItem="UnE-OU-bA9" secondAttribute="top" id="cIc-Sw-6bU"/>
+                            <constraint firstItem="5HZ-Em-Cgw" firstAttribute="leading" secondItem="oyW-wG-eqm" secondAttribute="leading" id="iAj-jL-xvq"/>
+                            <constraint firstItem="MVb-5U-2ao" firstAttribute="top" secondItem="uHq-Ic-Z3i" secondAttribute="bottom" constant="20" id="jbn-gu-EMB"/>
+                            <constraint firstItem="MVb-5U-2ao" firstAttribute="leading" secondItem="gAT-g0-lgH" secondAttribute="leading" constant="20" id="lcL-Yu-c3D"/>
+                            <constraint firstItem="uHq-Ic-Z3i" firstAttribute="leading" secondItem="gAT-g0-lgH" secondAttribute="leading" id="p7U-Nd-MPj"/>
+                            <constraint firstItem="5HZ-Em-Cgw" firstAttribute="top" secondItem="oyW-wG-eqm" secondAttribute="bottom" constant="10" id="yEP-uw-rKf">
+                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BZi-WE-RuG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-671.01449275362324" y="843.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6ul-Sg-utD">
+            <objects>
+                <viewController storyboardIdentifier="second" id="0ic-zG-orf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cph-Al-gtm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="R3o-UV-DBD">
+                                <rect key="frame" x="57" y="252" width="300" height="402.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_check" translatesAutoresizingMaskIntoConstraints="NO" id="zBy-6u-5Ky">
+                                        <rect key="frame" x="131.5" y="0.0" width="37" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="37" id="9z5-5m-vNr"/>
+                                            <constraint firstAttribute="height" constant="37" id="rrf-jt-81A"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZA-ZJ-GxF">
+                                        <rect key="frame" x="83.5" y="57" width="133.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" name="TextPrimaryColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yel-3V-5PC">
+                                        <rect key="frame" x="0.0" y="104.5" width="300" height="234"/>
+                                        <mutableString key="text">Lorem ipsum dolor sit amet consectetur adipiscing elit diam egestas mauris, ut mattis pretium habitasse senectus aenean lobortis nulla sem, sagittis porttitor morbi faucibus ridiculus nec dui quis vulputate. Vehicula integer metus aliquet nec sociosqu sodales semper et condimentum nullam, scelerisque lacus rutrum rhoncus taciti sagittis ad aenean vivamus elementum, cras congue facilisi orci lobortis venenatis iaculis dapibus nisl. Montes commodo libero sodales natoque eleifend justo, ultrices fermentum pellentesque laoreet vivamus faucibus convallis, conubia turpis leo congue nam.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" name="TextPrimaryColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joM-lV-FcM">
+                                        <rect key="frame" x="0.0" y="358.5" width="300" height="44"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="6Xr-of-0yn"/>
+                                            <constraint firstAttribute="width" constant="300" id="kTk-07-YHy"/>
+                                        </constraints>
+                                        <state key="normal" title="Siguiente"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="2KN-Xw-OKV"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xUc-Yn-JUW"/>
+                        <color key="backgroundColor" name="PrimaryColor"/>
+                        <constraints>
+                            <constraint firstItem="R3o-UV-DBD" firstAttribute="centerX" secondItem="xUc-Yn-JUW" secondAttribute="centerX" id="dJb-r1-i7n"/>
+                            <constraint firstItem="R3o-UV-DBD" firstAttribute="centerY" secondItem="xUc-Yn-JUW" secondAttribute="centerY" id="jtK-S3-arM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V97-Lo-peX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22" y="848"/>
+        </scene>
+        <!--Tour Final View Controller-->
+        <scene sceneID="rJW-uk-FNV">
+            <objects>
+                <viewController storyboardIdentifier="thirt" id="oS9-Zn-IWh" customClass="FDTourFinalViewController" customModule="FoodDog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="92J-mX-3ar">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ksZ-PP-tzN">
+                                <rect key="frame" x="57" y="310.5" width="300" height="285.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_share" translatesAutoresizingMaskIntoConstraints="NO" id="Ddg-4n-q32">
+                                        <rect key="frame" x="131.5" y="0.0" width="37" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="37" id="uPt-Bs-szT"/>
+                                            <constraint firstAttribute="height" constant="37" id="yni-27-tS9"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Iy-KW-45g">
+                                        <rect key="frame" x="83.5" y="57" width="133.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" name="TextPrimaryColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUd-Qi-z3o">
+                                        <rect key="frame" x="3" y="104.5" width="294.5" height="117"/>
+                                        <string key="text">Lorem ipsum dolor sit amet consectetur adipiscing elit diam egestas mauris, ut mattis pretium habitasse senectus aenean lobortis nulla sem, sagittis porttitor morbi faucibus ridiculus nec dui quis vulputate. Vehicula integer metus aliquet nec sociosqu sodales semper et condimentum nullam, </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" name="TextPrimaryColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Hh-O2-KdS">
+                                        <rect key="frame" x="0.0" y="241.5" width="300" height="44"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="P1q-BA-4Vb"/>
+                                            <constraint firstAttribute="height" constant="44" id="iRX-Nv-460"/>
+                                        </constraints>
+                                        <state key="normal" title="Continuar">
+                                            <color key="titleColor" name="TextPrimaryColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="kbb-YE-ygf" kind="show" id="PNS-BU-veO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Zc9-E8-9ae"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kQt-KD-b3N"/>
+                        <color key="backgroundColor" name="PrimaryColor"/>
+                        <constraints>
+                            <constraint firstItem="ksZ-PP-tzN" firstAttribute="centerY" secondItem="kQt-KD-b3N" secondAttribute="centerY" id="EGT-sc-o3b"/>
+                            <constraint firstItem="ksZ-PP-tzN" firstAttribute="centerX" secondItem="kQt-KD-b3N" secondAttribute="centerX" id="geS-cz-vdf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lpB-cd-zfB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="752" y="842"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="MXw-O9-QGC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="kbb-YE-ygf" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3mm-jP-ide"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qh2-qP-CdO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="1284"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image_check" width="37" height="37"/>
+        <image name="image_share" width="38" height="38"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.0" green="0.20000000298023224" blue="0.32199999690055847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondColor">
+            <color red="0.84700000286102295" green="0.84700000286102295" blue="0.84700000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextPrimaryColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextThirtColor">
+            <color red="0.0" green="0.4779999852180481" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

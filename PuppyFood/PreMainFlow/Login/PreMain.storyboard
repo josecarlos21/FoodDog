@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jaM-ec-vgY">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="qPY-9y-dlz">
+            <objects>
+                <viewController id="wkQ-Ha-bHF" customClass="FDLoginViewController" customModule="FoodDog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CDh-qT-WvD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YnZ-GX-seF" customClass="FDLabel" customModule="FoodDog" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="235" width="300" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="M5B-0k-t6u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="31"/>
+                                <color key="textColor" name="TextPrimaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Slr-xx-6hW" customClass="FDCustomView" customModule="FoodDog" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="302" width="300" height="107"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mj9-ZU-Xde">
+                                        <rect key="frame" x="0.0" y="9" width="300" height="89"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LpE-Ub-bzP">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUC-77-c7U" customClass="FDLabel" customModule="FoodDog" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="44"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="TextPrimaryColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Campo Obligatorio" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kqc-Te-BOm" customClass="FDTextFielLogin" customModule="FoodDog" customModuleProvider="target">
+                                                        <rect key="frame" x="100" y="0.0" width="200" height="44"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" name="TextPrimaryColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="continue" textContentType="email"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                                <color key="value" name="PlaceHolderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="G4A-ld-lSE"/>
+                                                    <constraint firstAttribute="width" constant="300" id="GuA-fd-RdK"/>
+                                                </constraints>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gup-yY-wuq" userLabel="Line">
+                                                <rect key="frame" x="0.0" y="44" width="300" height="1"/>
+                                                <color key="backgroundColor" name="PlaceHolderColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="g8F-si-aeM"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sFY-EL-G4r">
+                                                <rect key="frame" x="0.0" y="45" width="300" height="44"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zuz-rO-FLl" customClass="FDLabel" customModule="FoodDog" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="2lU-RU-8LF"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="TextPrimaryColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Campo Obligatorio" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YTE-CN-6Xd" customClass="FDTextFielLogin" customModule="FoodDog" customModuleProvider="target">
+                                                        <rect key="frame" x="100" y="0.0" width="200" height="44"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" name="TextPrimaryColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="password"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                                <color key="value" name="PlaceHolderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="2RI-QJ-FWh"/>
+                                                    <constraint firstAttribute="width" constant="300" id="7eZ-e6-7WC"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Kqc-Te-BOm" firstAttribute="width" secondItem="YTE-CN-6Xd" secondAttribute="width" id="X6T-DW-QLQ"/>
+                                            <constraint firstItem="Gup-yY-wuq" firstAttribute="leading" secondItem="mj9-ZU-Xde" secondAttribute="leading" id="aXA-4J-Dkk"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gup-yY-wuq" secondAttribute="trailing" id="dlX-1O-051"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="mj9-ZU-Xde" firstAttribute="centerX" secondItem="Slr-xx-6hW" secondAttribute="centerX" id="I8k-hl-A5q"/>
+                                    <constraint firstAttribute="width" constant="300" id="a44-Fd-FSR"/>
+                                    <constraint firstItem="mj9-ZU-Xde" firstAttribute="centerY" secondItem="Slr-xx-6hW" secondAttribute="centerY" id="aaH-LI-LA2"/>
+                                    <constraint firstAttribute="height" secondItem="mj9-ZU-Xde" secondAttribute="height" multiplier="1.2" id="sex-pb-R3R"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="PlaceHolderColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCn-lb-IhQ">
+                                <rect key="frame" x="132.5" y="449" width="110" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Iniciar sesión">
+                                    <color key="titleColor" name="TextSecondColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginApp:" destination="wkQ-Ha-bHF" eventType="touchUpInside" id="MAD-BU-FDP"/>
+                                    <segue destination="63r-qe-pED" kind="show" id="HSo-Hn-fFA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dxa-WH-WBv"/>
+                        <color key="backgroundColor" name="PrimaryColor"/>
+                        <constraints>
+                            <constraint firstItem="Slr-xx-6hW" firstAttribute="top" secondItem="YnZ-GX-seF" secondAttribute="bottom" constant="30" id="0UQ-7O-0P8">
+                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="Slr-xx-6hW" firstAttribute="centerY" secondItem="dxa-WH-WBv" secondAttribute="centerY" id="Rb5-fL-s5U">
+                                <variation key="heightClass=compact-widthClass=compact" constant="50"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="50"/>
+                            </constraint>
+                            <constraint firstItem="kCn-lb-IhQ" firstAttribute="top" secondItem="Slr-xx-6hW" secondAttribute="bottom" constant="40" id="UbD-85-4Lo">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="kCn-lb-IhQ" firstAttribute="centerX" secondItem="dxa-WH-WBv" secondAttribute="centerX" id="lur-42-kDz"/>
+                            <constraint firstItem="Slr-xx-6hW" firstAttribute="centerX" secondItem="dxa-WH-WBv" secondAttribute="centerX" id="qSV-6y-70G"/>
+                            <constraint firstItem="YnZ-GX-seF" firstAttribute="centerX" secondItem="dxa-WH-WBv" secondAttribute="centerX" id="uIK-Uc-B5P"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eW2-2p-kJs"/>
+                    <connections>
+                        <outlet property="emailTextFiel" destination="Kqc-Te-BOm" id="Ebi-w7-GZs"/>
+                        <outlet property="loginButton" destination="kCn-lb-IhQ" id="DkQ-ig-cWG"/>
+                        <outlet property="passwordTextFiel" destination="YTE-CN-6Xd" id="O8p-IP-5ZA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VMH-Gc-81O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Ul-Yh-oXU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jaM-ec-vgY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EcU-hZ-bjb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wkQ-Ha-bHF" kind="relationship" relationship="rootViewController" id="Mf3-UR-17T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Grv-Kh-VVr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Rzh-FJ-X5q">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="63r-qe-pED" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="n1m-Qf-qeo"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D78-Yg-XFv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="137"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Kqc-Te-BOm">
+            <size key="intrinsicContentSize" width="143" height="22"/>
+        </designable>
+        <designable name="YTE-CN-6Xd">
+            <size key="intrinsicContentSize" width="143" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="PlaceHolderColor">
+            <color red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryColor">
+            <color red="0.0" green="0.20000000298023224" blue="0.32199999690055847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextPrimaryColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextSecondColor">
+            <color red="0.60799998044967651" green="0.60799998044967651" blue="0.60799998044967651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

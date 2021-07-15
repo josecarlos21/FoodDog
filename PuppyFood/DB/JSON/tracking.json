@@ -1,0 +1,96 @@
+{
+   "tracking": [
+      {
+         "ID": "1",
+         "imagen": "",
+         "headerTitle": "Afore Citibanamex",
+         "detailTitle": "Comite de Retiro Parciales",
+         "status": "Atendido a tiempo",
+         "priority": "Medio",
+         "meetingDate": "2019/09/07 23:22:11",
+         "agreementDate": "2019/09/07 23:22:11",
+         "commitmentDate": "2019/09/07 23:22:11",
+         "agreementholders": [
+            {
+               "ID": "1",
+               "name": "Alejandro Gutierrez Pallares"
+            },
+            {
+               "ID": "2",
+               "name": "Anabel Yuridia"
+            }
+         ],
+         "responsible": [
+            {
+               "ID": "1",
+               "name": "Juan Manuel Chavez"
+            },
+            {
+               "ID": "2",
+               "name": "José Carlos Torres"
+            }
+         ],
+         "head": [
+            {
+               "ID": "1",
+               "name": "Alejandro Gutierrez Pallares"
+            }
+         ],
+         "workAreas": [
+            {
+               "ID": "1",
+               "name": "Desarrollo de Sistema"
+            }
+         ],
+         "direction": [
+            {
+               "ID": "1",
+               "name": "Tecnologia"
+            }
+         ],
+         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet mi at lacus aliquet, eget mattis erat feugiat. Pellentesque vitae lobortis nisl. Proin lobortis arcu at nisi molestie maximus. Ut ex enim, volutpat eu tellus gravida, accumsan placerat arcu. Donec pretium at turpis a maximus. Pellentesque porttitor, ipsum sit amet tempor pharetra, eros massa eleifend est, vitae consectetur sapien ante sed libero. Proin molestie ac felis at tincidunt. Aliquam at neque nec dolor elementum sagittis eget eget ligula. Integer ultrices tellus quis lectus sodales pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ac metus dolor. Quisque venenatis enim quis eros scelerisque fermentum. Aliquam quis ipsum metus. Suspendisse pellentesque, augue sed ultricies auctor, erat nisi placerat orci, malesuada elementum mi urna ac tellus."
+      },
+      {
+         "ID": "2",
+         "imagen": "",
+         "headerTitle": "Afore Profuturo",
+         "detailTitle": "Comite de Retiro Parciales",
+         "status": "Atendido a tiempo",
+         "priority": "Alto",
+         "meetingDate": "2019/09/07 23:22:11",
+         "agreementDate": "2019/09/07 23:22:11",
+         "commitmentDate": "2019/09/07 23:22:11",
+         "agreementholders": [
+            {
+               "ID": "1",
+               "name": "Alejandro Gutierrez Pallares"
+            }
+         ],
+         "responsible": [
+            {
+               "ID": "2",
+               "name": "José Carlos Torres"
+            }
+         ],
+         "head": [
+            {
+               "ID": "1",
+               "name": "Alejandro Gutierrez Pallares"
+            }
+         ],
+         "workAreas": [
+            {
+               "ID": "1",
+               "name": "Desarrollo de Sistema"
+            }
+         ],
+         "direction": [
+            {
+               "ID": "1",
+               "name": "Tecnologia"
+            }
+         ],
+         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet mi at lacus aliquet, eget mattis erat feugiat. Pellentesque vitae lobortis nisl. Proin lobortis arcu at nisi molestie maximus. Ut ex enim, volutpat eu tellus gravida, accumsan placerat arcu. Donec pretium at turpis a maximus. Pellentesque porttitor, ipsum sit amet tempor pharetra, eros massa eleifend est, vitae consectetur sapien ante sed libero. Proin molestie ac felis at tincidunt. Aliquam at neque nec dolor elementum sagittis eget eget ligula. Integer ultrices tellus quis lectus sodales pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ac metus dolor. Quisque venenatis enim quis eros scelerisque fermentum. Aliquam quis ipsum metus. Suspendisse pellentesque, augue sed ultricies auctor, erat nisi placerat orci, malesuada elementum mi urna ac tellus."
+      }
+   ]
+}
